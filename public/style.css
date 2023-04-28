@@ -1,0 +1,340 @@
+/* home para movil------------------- */
+.contenido {
+    background: rgb(195, 42, 34);
+    background: linear-gradient(257deg, rgba(195, 42, 34, 0.87718837535014) 42%, rgba(0, 255, 4, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Lobster', cursive;
+    padding-top: 1rem;
+    color: black;
+    text-shadow: 15px 15px 15px greenyellow;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-shadow: 15px 15px 15px black;
+}
+
+.seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    text-align: center;
+}
+
+.aside {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pie {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 50px;
+    padding: 5px;
+    font-size: 1rem;
+}
+.pie p{
+    font-size: 12px;
+}
+.linkdelpie {
+    display: flex;
+    flex-direction: row;
+}
+
+/* logo y links----------- */
+.logoimg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.logo {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* imagenes de portada------------- */
+.imagenes {
+    width: 80%;
+    height: 40%;
+}
+
+.imagenescarru {
+    height: 80%;
+    width: 40%;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* tablets 768--------------- */
+@media(min-width:768px) {
+    h2 {
+        color: black;
+        padding-top: 1rem;
+    }
+
+    h3 {
+        font-size: 30px;
+        text-shadow: 15px 15px 15px greenyellow;
+    }
+
+    .imagenes {
+        box-shadow: 10px 10px 10px black;
+        border-radius: 20px;
+    }
+
+    .seccion.uno {
+        flex-direction: row;
+    }
+
+    .seccion.dos {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .seccion.tres {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .imagenes {
+        width: 50%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+/* pantallas    min-992 */
+@media(min-width:992px) {
+    .principal {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "griduno giddos"
+            "gridtres aside"
+        ;
+    }
+
+    .griduno {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .griddos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gridtres {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .seccion {
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .imagenes {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+/* pagina formulario--------------- */
+body {
+    background: rgb(195,42,34);
+background: linear-gradient(257deg, rgba(195,42,34,0.87718837535014) 42%, rgba(0,255,4,1) 100%);
+}
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.campos {
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    margin: 2rem;
+    border-color: gold;
+    border-radius: 20px;
+    background-color: ghostwhite;
+    width: 30rem;
+}
+
+input,
+select,
+textarea {
+    margin-bottom: 1rem;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    flex-wrap: nowrap;
+    border-radius: 10px 20px 10px 10px;
+}
+
+.botones input {
+    padding: 5px;
+    text-transform: lowercase;
+    font-family: 'Inter Tight', sans-serif;
+}
+
+.botones input:hover {
+    background-color: blue;
+    color: gold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: 15px 15px 15px aquamarine;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.celda,
+select {
+    border: none;
+    border-radius: 5px;
+    border-bottom-style: inset;
+}
+
+textarea {
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px aquamarine;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+legend{
+    font-family: 'Lobster', cursive;
+}
+
+/* --------tablettttt---------- */
+@media (min-width:768px) {
+    .campos {
+        width: 40rem;
+        align-items: center;
+        border-style: none;
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+
+    body {
+        background-color: grey
+    }
+
+    legend {
+        font-size: 2rem;
+        color: rgb(122, 41, 41);
+        text-align: center;
+    }
+
+    .botones input {
+        font-size: 2rem;
+    }
+
+    .botones input:hover {
+        background-color: yellow;
+        color: black;
+    }
+    textarea {
+        width: 30rem;
+        font-size: 20px;
+    }
+}
+
+/*-------------pantallas------------- */
+@media(min-width:992px) {
+    body {
+        background-color: antiquewhite;
+
+    }
+
+    .campos {
+        width: 50rem;
+        display: flex;
+        align-items: flex-start;
+
+    }
+
+    legend {
+        color: black;
+        text-shadow: 1rem 1rem 1rem red;
+    }
+
+    .paises {
+        font-size: 25px;
+    }
+
+    .paises input {
+        width: 20px;
+        height: 20px;
+    }
+
+    .botones input {
+        text-transform: lowercase;
+        border-radius: 10px;
+    }
+
+    .botones input:hover {
+        background-color: blueviolet;
+        box-shadow: 3rem 3rem 3rem black;
+        text-transform: uppercase;
+    }
+
+    label,
+    .terminos {
+        font-size: 30px;
+    }
+
+    .terminos input {
+        height: 20px;
+        width: 20px;
+    }
+
+    select {
+        font-size: 2rem;
+        border-radius: 15px;
+    }
+
+    .celda {
+        width: 15rem;
+        height: 2rem;
+        font-size: 25px;
+        border: none;
+        border-radius: 5px;
+        border-bottom: 5px;
+    }
+
+    textarea {
+        width: 40rem;
+        font-size: 25px;
+    }
+}
+/* pagina de nuestro club---------------- */
+.imagenescarrunos{
+    width: 80vw;
+    height: 80vh;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,400;1,600&family=Lobster&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./logos/escudo bochín.jpg">
+    <title>Novedades</title>
+</head>
+
+<body>
+
+    {{> header}}
+
+    <h2>{{tituloPrincipal}}</h2>
+
+    <p class="text-center">
+        Nuestra humilde club, desde su creación en 1950, ha trabajado con los vecinos de la comunidad y el municio para
+        llevar toda clase de eventos y actividades.
+    </p>
+    <p class="text-center">
+        Gracias a la gestión del municipio, hoy contamos con un salon para eventos, para uso de cualquier socio y no
+        socio.
+    </p>
+    <p class="text-center">
+        En las imagenes se pueden ver los torneos amistosos, festejos de socios, y el salón de usos múltiples.
+    </p>
+    <p class="text-center">
+        Se dan clases de salsa, rumba, pilates.
+    </p>
+    <div id="carouselExampleFade" class="carousel slide carousel-fade w-100" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./fotos/SDC16099.JPG" class="d-block w-100" alt="nuestro salon">
+            </div>
+            <div class="carousel-item">
+                <img src="./fotos/FBC 033.jpg" class="d-block w-100" alt="torneo de bochas">
+            </div>
+            <div class="carousel-item">
+                <img src="./fotos/SDC16647.JPG" class="d-block w-100" alt="fiestas de socios">
+            </div>
+            <div class="carousel-item">
+                <img src="./fotos/boyu 9.jpg" class="d-block w-100" alt="fiestas de socios">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    {{> footer}}
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

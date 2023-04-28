@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,400;1,600&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./logos/escudo bochín.jpg">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light fs-5" href="#"> Fraternidad Bochin Club</a>
+                <button class="navbar-toggler bg-dark border-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ">
+                            <a class="nav-link active text-light text-center fs-3" aria-current="page"
+                                href="/">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light text-center fs-3" href="./novedades">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light text-center fs-3" href="./contacto.html">Contacto</a>
+                        </li>
+                        </button>
+                </div>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <form action="/usuario" class="form" method="post">
+
+            <fieldset class="campos">
+                <legend>Complete el formulario</legend>
+
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre" class="celda">
+
+                <label for="correo">Email</label>
+                <input type="email" name="correo" id="correo" placeholder="ingresa tu email" class="celda">
+
+                <label for="clave">Contraseña</label>
+                <input type="password" name="clave" id="clave" placeholder="ingresa tu contraseña" class="celda">
+
+                <label for="fecha">Fecha de nacimiento</label>
+                <input type="date" name="fecha" id="fecha" required class="celda">
+
+                <select name="talle" id="talle">
+                    <option value="l">large</option>
+                    <option value="m">medium</option>
+                    <option value="s">small</option>
+                </select>
+
+                <label for="mensaje">Escribi un mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="25" rows="10" placeholder="Ingrese aquí su consulta"></textarea>
+                <div class="paises">
+
+                    
+                    <input type="radio" name="socio" value="socio">
+                    <label for="pais">socio</label>
+
+                    <input type="radio" name="socio" value="no socio">
+                    <label for="pais">no socio</label>
+
+                </div>
+                <div class="terminos">
+                    <input type="checkbox" name="acepta" id="acepta" value="1" required>
+                    <label for="acepta">Acepta los terminos y condiciones </label>
+                </div>
+                <div class="botones">
+                    <input type="submit" value="Enviar formulario">
+
+                    <input type="reset">
+
+                    <input type="button" value="sin acciones">
+                </div>
+            </fieldset>
+
+        </form>
+    </section>
+
+    <footer class="pie bg-dark text-light">
+        <p>© 2022 Copyright</p>
+        <p>Todos los derechos reservados</p>
+        <div class="linkdelpie">
+            <a href="https://www.facebook.com/fraternidadbochinclub" class="btn btn-primary bg-light logo"><img
+                    class="logoimg" src="./logos/logoface.png" alt="ir a face"></a>
+            <a href="https://www.youtube.com/user/fraternidadbochinclu" class="btn btn-primary bg-light logo"><img
+                    class="logoimg" src="./logos/logoyoutube.png" alt="ir a youtube"></a>
+        </div>
+    </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
